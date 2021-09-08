@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>音乐Tai</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="首页.css">
+	<script type="text/javascript" src="首页.js"></script>
+	<script type="text/javascript">
+	//rem适配
+	rem();
+ 	function rem() {
+           var  style = document.createElement("style");
+           var width = document.documentElement.clientWidth/16;
+           style.innerHTML = "html{font-size:"+width+"px!important}";
+           document.head.appendChild(style);
+       }
+   </script>
+</head>
+<body>
+  <div id="tanchuang" style="display:none">
+    <div id="close">
+    <span id="tcs1"></span>
+    <span id="tcs2"></span>
+    </div>
+    <video></video>
+  </div>
+	<div id="warp">
+		<header>
+			<img src="imgs/logo.png" id="logo">
+			<a href="#" id="menubtn" class="menuBtn_clos"></a>
+			<div id="header-btn">
+			<a src="#">搜索</a>
+			<a src="#">登陆</a>
+			<a src="#">注册</a>
+			</div>
+			<form id="search">
+				<input type="text" name="" placeholder="请输入搜索内容。。。">
+				<input type="submit" name="" value="搜索">
+			</form>
+		</header>
+            <!---雪碧图--->
+		<ul id="mask" style="display:none">
+            <li>
+                <a href="javascript:;">首页</a>
+            </li>
+            <li>
+                <a href="javascript:;">MV</a>
+            </li>
+            <li>
+                <a href="javascript:;">悦单</a>
+            </li>
+            <li>
+                <a href="javascript:;">V榜</a>
+            </li>
+            <li>
+                <a href="javascript:;">音悦</a>
+            </li>
+            <li>
+                <a href="javascript:;">商城</a>
+            </li>
+            <li>
+                <a href="javascript:;">节目</a>
+            </li>
+            <li>
+                <a href="javascript:;">饭团</a>
+            </li>
+            <li>
+                <a href="javascript:;">资讯</a>
+            </li>
+            <li>
+                <a href="javascript:;">我的家</a>
+            </li>
+            <li>
+                <a href="javascript:;">APP下载</a>
+            </li>
+            <li>
+                <a href="javascript:;">热门应用</a>
+            </li>
+        </ul>
+
+        <!---主体--->
+        <div id="content">
+    <div id="huadong">
+        <!---导航区--->
+        <nav id="nav">
+        	<ul id="navlist" >
+                  <li class="active">
+                      <a href="javascript:;">首页</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">MV</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">悦单</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">V榜</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">音悦</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">商城</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">节目</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">饭团</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">资讯</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">我的家</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">APP下载</a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">热门应用</a>
+                  </li>
+              </ul>
+        </nav>
+        <!---轮播图--->
+        <div id="banner">
+          <ul>
+            <li><a href="#"><img src="imgs/banner1.jpeg"></a></li>
+            <li><a href="#"><img src="imgs/banner2.jpg"></a></li>
+            <li><a href="#"><img src="imgs/banner3.jpg"></a></li>
+            <li><a href="#"><img src="imgs/banner4.jpeg"></a></li>
+            <li><a href="#"><img src="imgs/banner5.jpeg"></a></li>
+          </ul>
+        </div>
+        <!---音乐--->
+     <section  class="tab">
+              <div class="tab_header">
+                   <h2>音乐</h2>
+                   <a href="javascript:;">更多&gt</a>
+              </div>
+              <nav class="tab_nav" id="tab_nav">
+                  <a href="javascript:;">经典</a>
+                  <a href="javascript:;">影视</a>
+                  <a href="javascript:;">华晨宇</a>
+                  <a href="javascript:;">林俊杰</a>
+                  <a href="javascript:;">周杰伦</a>
+                  <a href="javascript:;">纯音乐</a>
+              </nav>
+    <div class="tab_wrap" id="tab_wrap">
+                
+          <div id="tab_list">
+                  <!---经典--->
+                  <ul class="tab_list" >
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>梦的光点-王心凌</p>
+                      </li>
+                     <li >
+                        <div class="tldiv1" >
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                         <p>会呼吸的痛-王心凌</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                         <p>宿敌-许嵩</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                         <p>天下-张杰</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                         <p>情动-秦时明月片尾曲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                         <p>只要为你活一天</p>
+                         
+                      </li>
+                  </ul>
+                  <!---影视--->
+                   <ul class="tab_list" >
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>爱殇-电视剧东宫片尾曲</p>
+                      </li>
+                     <li >
+                        <div class="tldiv1" >
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>当归-秦时明月片尾曲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>乌云然-射雕英雄传主题曲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>浩瀚-神雕侠侣主题曲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>一眼万年-天外飞仙片尾曲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>桃花岛-仙剑奇侠传插曲</p>
+                      </li>
+                  </ul>
+                  <!---华晨宇--->
+                   <ul class="tab_list" >
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>齐天</p>
+                      </li>
+                     <li >
+                        <div class="tldiv1" >
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>鞋儿破帽儿破</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>我的滑板鞋</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>山海</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>双截棍</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>齐天大圣</p>
+                      </li>
+                  </ul>
+                  <!---林俊杰--->
+                  <ul class="tab_list" >
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>曹超</p>
+                      </li>
+                     <li >
+                        <div class="tldiv1" >
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>醉赤壁</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>第二天堂</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>杀手</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>黑键</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>不潮不用花钱</p>
+                      </li>
+                  </ul>
+
+
+                  <!---周杰伦--->
+                   <ul class="tab_list" >
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>青花瓷</p>
+                      </li>
+                     <li >
+                        <div class="tldiv1" >
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>红尘客栈</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>霍元甲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>夜曲</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>以父之名</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>龙卷风</p>
+                      </li>
+                  </ul>
+                  <!---纯音乐--->
+                  <ul class="tab_list" >
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>天宫-igoo2u</p>
+                      </li>
+                     <li >
+                        <div class="tldiv1" >
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>失去才懂得-欧阳朵</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>舞步生风</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>三生树</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2" >
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>心弦</p>
+                      </li>
+                      <li >
+                        <div class="tldiv1">
+                            <div class="tldiv2">
+                          <span class="s1"></span>
+                          <span class="s2"></span>
+                           </div>
+                        </div>
+                        <p>幻昼</p>
+                      </li>
+                  </ul>
+            </div>
+      </div>
+    </section>
+     <!---MV--->
+    <section  class="tab2">
+             <div class="tab2_header">
+                   <h2>MV</h2>
+                   <a href="javascript:;">更多&gt</a>
+              </div>
+              <nav class="tab2_nav" id="tab2_nav">
+                  <a href="javascript:;">经典</a>
+                  <a href="javascript:;">影视</a>
+                  <a href="javascript:;">舞蹈</a>
+                  <a href="javascript:;">动漫</a>
+                  <a href="javascript:;">BGM</a>
+                  <a href="javascript:;">其它</a>
+              </nav>
+        <div class="tab2_wrap" id="tab2_wrap">
+                <!---经典--->
+           <div id="tab2_list">
+                  <ul class="tab2_list" >
+                      <li>
+                         
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                  </ul>
+                  <!---影视--->
+                    <ul class="tab2_list" >
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                  </ul>
+                  <!---舞蹈--->
+                    <ul class="tab2_list" >
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                  </ul>
+                  <!---动漫--->
+                    <ul class="tab2_list" >
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                  </ul>
+                  <!---BGM--->
+                    <ul class="tab2_list" >
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                  </ul>
+                  <!---其它--->
+                    <ul class="tab2_list" >
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                         
+                      </li>
+                      <li>
+                          
+                      </li>
+                      <li>
+                          
+                      </li>
+                  </ul>
+               </div>
+          </div>
+      </section>
+          <div id="footer">
+            <ul>
+              <li><a href="">麦振鸿</a></li>
+              <li><a href="">华晨宇</a></li>
+               <li><a href="">林俊杰</a></li>
+                <li><a href="">周杰伦</a></li>
+                 <li><a href="">徐良</a></li>
+                  <li><a href="">汪苏泷</a></li>
+                   <li><a href="">许嵩</a></li>
+                    <li><a href="">蔡依林</a></li>
+                     <li><a href="">张含韵</a></li>
+                      <li><a href="">张韶涵</a></li>
+                       <li><a href="">梁静茹</a></li>
+                        <li><a href="">邓紫棋</a></li>    
+            </ul> 
+          </div>
+     </div><!---划动区--->
+    </div><!---content--->
+	</div>
+</body>
+</html>
